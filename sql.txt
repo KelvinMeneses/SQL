@@ -1,0 +1,76 @@
+/*CREATE TABLE IF NOT EXISTS funcionario(    
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome VARCHAR(100) not NULL,
+  email VARCHAR(100) ,
+  idade INTEGER,
+  cpf varchar(14) not NULL, 
+  telefone varchar(15), 
+  expecialidade TEXT,
+  endereço TEXT  
+  
+  );
+  
+  /*CREATE TABLE IF NOT EXISTS clientes(    
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome VARCHAR(100) not NULL,
+  email VARCHAR(100),
+  idade INTEGER,
+  cpf varchar(14) not NULL, 
+  telefone varchar(15), 
+  endereço TEXT  
+  
+  );
+  
+  INSERT INTO clientes (nome, email, idade, cpf, telefone, endereço) VALUES ('carlos Silva', 'Carlosilvreea@gmail.com', 19, '987.197.756.90', '45 991968800', 'Rua traça torres,398');
+  INSERT INTO clientes (nome, email, idade, cpf, telefone, endereço) VALUES ('Matheus marcos', 'Mathusmarcoskb@gmail.com', 18, '967.667.756.90', '45 999898800', 'Rua trasul,896');
+  INSERT INTO clientes (nome, email, idade, cpf, telefone, endereço) VALUES ('José hericul', 'Joséjbsh@gmail.com', 24, '987.667.278.90', '45 928969800', 'Rua aalçul,103');
+  INSERT INTO clientes (nome, email, idade, cpf, telefone, endereço) VALUES ('Leandro fluer', 'Leandroluikal@gmail.com', 64, '987.686.056.90', '45 999268900', 'Rua albarnar,143');
+  INSERT INTO clientes (nome, email, idade, cpf, telefone, endereço) VALUES ('Miguel menegueu', 'Miguelsheirotaleu@gmail.com', 40, '987.097.756.90', '45 991098800', 'Rua bhaai,226');
+   
+   SELECT * FROM clientes;*/
+  
+  INSERT INTO funcionario (nome, email, idade, cpf, telefone, expecialidade, endereço) VALUES ('João Silva', 'jaoilvreea@gmail.com', 30, '987.867.756.90', '45 991268800', 'Depilação anal', 'Rua fernaa torres,098');
+  INSERT INTO funcionario (nome, email, idade, cpf, telefone, expecialidade, endereço) VALUES ('João marcos', 'joaomarcoskb@gmail.com', 19, '987.667.756.90', '45 999878800', 'Degrade', 'Rua criobras,876');
+  INSERT INTO funcionario (nome, email, idade, cpf, telefone, expecialidade, endereço) VALUES ('Carlo hericul', 'Carlosjbsh@gmail.com', 24, '987.667.798.90', '45 928968800', 'corte barba ', 'Rua aalnurt,153');
+  INSERT INTO funcionario (nome, email, idade, cpf, telefone, expecialidade, endereço) VALUES ('Pietro fluer', 'Pietroluikal@gmail.com', 29, '987.667.056.90', '45 991268900', 'Descoloração', 'Rua albarnar,123');
+  INSERT INTO funcionario (nome, email, idade, cpf, telefone, expecialidade, endereço) VALUES ('Carlos menegueu', 'carlosheirotaleu@gmail.com', 32, '987.247.756.90', '45 991098268800', 'sombrancelha', 'Rua bhaai,296');
+   
+   SELECT * FROM funcionario;*/
+   
+  /* CREATE TABLE IF NOT EXISTS serviços(    
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome VARCHAR(100) not NULL,
+  tempo TEXT NOT NULL,
+  valor REAL NOT NULL,
+  descrição VARCHAR(100)
+  );
+  
+  INSERT INTO serviços (nome, tempo, valor, descrição) VALUES ( 'Corte de cabelo degrade', '30:00', '35.00', 'corte de cabelo tamanho curto e sofisticado');
+  INSERT INTO serviços (nome, tempo, valor, descrição) VALUES ( 'Corte de barba degrade', '35:00', '40', 'corte de barba tamanho curto e sofisticado ');
+  INSERT INTO serviços (nome, tempo, valor, descrição) VALUES ( 'Corte de sombrancelha', '45:00', '50', 'coresão das linha da sombrancelha');
+  INSERT INTO serviços (nome, tempo, valor, descrição) VALUES ( 'Depilação das pernas ', '55:00', '110', 'Depilação das pernas feita por cera quente');
+  INSERT INTO serviços (nome, tempo, valor, descrição) VALUES ( 'Depilação anal ', '1:15:00', '269', 'Depilação anal eita por cera quente');
+   
+   SELECT * FROM serviços;/*
+   
+   CREATE TABLE IF NOT EXISTS agendamentos(    
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  cliente  VARCHAR(100) not NULL,
+  data text NOT NULL,
+  horario  TEXT NOT NULL,
+  tempo TEXT NOT NULL,
+  valor REAL NOT NULL,
+  serviço VARCHAR(100) NOT NULL,
+  barbeiro VARCHAR(100) NOT NULL,
+  status text NOT NULL
+  
+  );
+  
+  INSERT INTO agendamentos (cliente , data, horario, tempo, valor, serviço, barbeiro, status) VALUES ( 'kelvim masedo', '12/06/2025', '13:30', '45min', '35.70', 'corte de cabelo degrade', 'Marcos  eduardo', 'CONFIRMADO');
+  INSERT INTO agendamentos (cliente , data, horario, tempo, valor, serviço, barbeiro, status) VALUES ( ' Junior masedo', '12/06/2025', '14:30', '40min', '40.80', 'corte de barba', 'wiliam  eduardo', 'CANCELADO');
+  INSERT INTO agendamentos (cliente , data, horario, tempo, valor, serviço, barbeiro, status) VALUES ( 'Carlos masedo', '12/06/2025', '16:30', '50min', '45.10', 'descoloração de cabelo', 'Edurado eduardo', 'CONFIRMADO');
+  INSERT INTO agendamentos (cliente , data, horario, tempo, valor, serviço, barbeiro, status) VALUES ( 'Lucas masedo', '12/06/2025', '18:30', '90min', '105.50', 'depilação corporal ', 'Clovis eduardo', 'FINALIZADO');
+  INSERT INTO agendamentos (cliente , data, horario, tempo, valor, serviço, barbeiro, status) VALUES ( ' Mateus masedo', '12/06/2025', '21:30', '60min', '60.60', 'sombrancelha', 'Jeam eduardo', 'PENDENTE');
+  
+   
+   SELECT * FROM agendamentos;

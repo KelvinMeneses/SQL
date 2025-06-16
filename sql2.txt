@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS financeiro(    
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  mensal VARCHAR(100) not NULL,
+  valor  real NOT NULL,
+  gastos real not null,
+  lucros REAL NOT NULL,
+  barbeiro text,
+  serviço varchar(100)
+  );
+  
+  INSERT INTO financeiro (mensal, valor , gastos, lucros, barbeiro, serviço) VALUES ( 'Janeiro', '15.000.00', '10.000.00', '5.000.00', 'Marcos roriu', 'Degrae capilar');
+  INSERT INTO financeiro (mensal, valor , gastos, lucros, barbeiro, serviço) VALUES ( 'Fevereiro', '20.000.00', '15.000.00', '5.000.00', 'Marcos roriu', 'Degrade capilar');
+  INSERT INTO financeiro (mensal, valor , gastos, lucros, barbeiro, serviço) VALUES ( 'Março', '25.000.00', '15.000.00', '10.000.00', 'Lucas rumou', 'Depilação corporal');
+  INSERT INTO financeiro (mensal, valor , gastos, lucros, barbeiro, serviço) VALUES ( 'Abril', '30.000.00', '20.000.00', '10.000.00', 'Lucas rumou', 'Depilação corporal');
+  INSERT INTO financeiro (mensal, valor , gastos, lucros, barbeiro, serviço) VALUES ( 'Maio', '35.000.00', '10.000.00', '25.000.00', 'Marcos roriu', 'Depilação corporal');
+   
+  SELECT * FROM financeiro;
